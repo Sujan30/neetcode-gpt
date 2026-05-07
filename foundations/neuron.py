@@ -15,7 +15,7 @@ class Solution:
         # return round(your_answer, 5)
 
 
-        total = x @ w + b
+        total = np.dot(x, w) + b
 
         if activation == "sigmoid":
             return round(1 / (1+ np.exp(-total)), 5)
